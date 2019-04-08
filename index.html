@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+    <body onload="getTasks()" >
+        <div id="main">
+                <div id="task_lists">
+                    <h2>Add task:</h2><br>
+                    <button onclick="getAjax()" name="getTasks" type="button" id="btnGet">GET Tasks</button>
+                    <!-- <input type="text" name="inputUrl" placeholder="" id="inputUrl" ><br><br> -->
+                    <input type="text" name="inputTaskName" placeholder="New Task name" id="inputTaskName" autofocus><br><br>
+                    <input type="text" name="inputTaskDescription" placeholder="description" id="inputTaskDescription" ><br><br>
+                    <button onclick="postTask" name="addTask" type="button" id="btnAddTask">Add task</button>
+
+                </div>
+                <div id="taskList">
+                    <span id="content"></span>
+                </div>
+<!--                 
+                <div id="tasks"><br>
+                    <h3>Tasks</h3><br><br>
+                    
+                    <input type="text" name="filter_task" placeholder="Filter Task" onkeyup="filterTasks()" id="input2"><br><br>
+                    <div id="listBox"><ul id="list"></ul></div>
+                    <button onclick="clearTasks()" name="add_task" type="button" id="button2">CLEAR TASKS</button><br>
+                </div> -->
+            </form>
+        </div>
+        <script type="text/javascript" src="mainAjax.js"></script>
+    </body>
+</html>
